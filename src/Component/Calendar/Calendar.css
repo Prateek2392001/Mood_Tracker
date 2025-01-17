@@ -1,0 +1,98 @@
+
+.calendar-container {
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .calendar-header button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #45a049;
+  }
+  
+ 
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+  }
+  
+  .day-name, .day, .empty-day {
+    padding: 10px;
+    background-color: #2b2b3c;
+    border-radius: 8px;
+    border: 1px solid #3a3a4f;
+  }
+  
+  .day {
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .day:hover {
+    background-color: #3e3e5a;
+    transform: scale(1.05);
+  }
+  
+  
+  .mood-selector {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .mood-btn {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.3s;
+  }
+  
+  .mood-btn:hover {
+    transform: scale(1.3);
+    filter: brightness(1.2);
+  }
+  
+  .mood-btn.selected {
+    filter: brightness(1.5);
+    transform: scale(1.5);
+  }
+  
+  
+  .empty-day {
+    background-color: transparent;
+    border: none;
+  }
+  
+ 
+  .day span {
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
